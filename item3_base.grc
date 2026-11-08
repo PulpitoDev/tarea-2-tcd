@@ -111,6 +111,98 @@ blocks:
     coordinate: [330, 12]
     rotation: 0
     state: enabled
+- name: analog_sig_source_x_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: ''
+    freq: '5000'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: samp_rate
+    showports: 'False'
+    type: float
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 556.0]
+    rotation: 0
+    state: enabled
+- name: analog_sig_source_x_0_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: ''
+    freq: '5000'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: samp_rate
+    showports: 'False'
+    type: float
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [552, 948.0]
+    rotation: 0
+    state: enabled
+- name: analog_sig_source_x_0_0_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: ''
+    freq: fc_fsk-df
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: samp_rate
+    showports: 'False'
+    type: float
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 1532.0]
+    rotation: 0
+    state: enabled
+- name: analog_sig_source_x_0_0_0_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: ''
+    freq: fc_fsk+df
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: samp_rate
+    showports: 'False'
+    type: float
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 1396.0]
+    rotation: 0
+    state: enabled
 - name: archivo
   id: blocks_file_source
   parameters:
@@ -151,6 +243,168 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [8, 240.0]
+    rotation: 0
+    state: enabled
+- name: blocks_add_const_vxx_0
+  id: blocks_add_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [424, 884.0]
+    rotation: 0
+    state: enabled
+- name: blocks_add_const_vxx_1
+  id: blocks_add_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [408, 1268.0]
+    rotation: 0
+    state: enabled
+- name: blocks_add_xx_0
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [872, 1264.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '2'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [208, 908.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_1
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 1268.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_xx_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [264, 544.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_xx_0_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 880.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_xx_0_0_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [272, 1512.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_xx_0_0_0_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [576, 1272.0]
     rotation: 0
     state: enabled
 - name: c2f
@@ -1034,19 +1288,33 @@ blocks:
     state: enabled
 
 connections:
+- [analog_sig_source_x_0, '0', blocks_multiply_xx_0, '1']
+- [analog_sig_source_x_0_0, '0', blocks_multiply_xx_0_0, '1']
+- [analog_sig_source_x_0_0_0, '0', blocks_multiply_xx_0_0_0, '1']
+- [analog_sig_source_x_0_0_0_0, '0', blocks_multiply_xx_0_0_0_0, '1']
 - [archivo, '0', thr_grab, '0']
 - [bits, '0', repeat, '0']
+- [blocks_add_const_vxx_0, '0', blocks_multiply_xx_0_0, '0']
+- [blocks_add_const_vxx_1, '0', blocks_multiply_xx_0_0_0_0, '0']
+- [blocks_add_xx_0, '0', f_bfsk, '0']
+- [blocks_add_xx_0, '0', t_bfsk, '1']
+- [blocks_multiply_const_vxx_0, '0', blocks_add_const_vxx_0, '0']
+- [blocks_multiply_const_vxx_1, '0', blocks_add_const_vxx_1, '0']
+- [blocks_multiply_xx_0, '0', f_ask, '0']
+- [blocks_multiply_xx_0, '0', t_ask, '1']
+- [blocks_multiply_xx_0_0, '0', t_bpsk, '1']
+- [blocks_multiply_xx_0_0_0, '0', blocks_add_xx_0, '1']
+- [blocks_multiply_xx_0_0_0_0, '0', blocks_add_xx_0, '0']
 - [c2f, '0', thr, '0']
 - [g_bfsk, '0', f_bfsk, '1']
-- [m_ask, '0', f_ask, '0']
+- [m_ask, '0', blocks_multiply_xx_0, '0']
 - [m_ask, '0', t_ask, '0']
-- [m_ask, '0', t_ask, '1']
-- [m_bfsk, '0', f_bfsk, '0']
+- [m_bfsk, '0', blocks_multiply_const_vxx_1, '0']
+- [m_bfsk, '0', blocks_multiply_xx_0_0_0, '0']
 - [m_bfsk, '0', t_bfsk, '0']
-- [m_bfsk, '0', t_bfsk, '1']
+- [m_bpsk, '0', blocks_multiply_const_vxx_0, '0']
 - [m_bpsk, '0', f_bpsk, '0']
 - [m_bpsk, '0', t_bpsk, '0']
-- [m_bpsk, '0', t_bpsk, '1']
 - [repeat, '0', c2f, '0']
 - [thr, '0', vs_m, '0']
 - [thr_grab, '0', f_grab, '0']
